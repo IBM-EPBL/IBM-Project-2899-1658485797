@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+  font-family: Georgia, serif;
+             }
+        th, td {
+        border: 1px solid white;
+        border-radius: 10px;
+        }
+    
+      .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: black;
+        text-align: center;
+        color: white;
+        }
+        h1 {
+        color:  rgb(240, 243, 240);
+        }
+        a:link {
+        color: green;
+        background-color: transparent;
+        text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    
+    <fieldset style="background-color: black">
+      <h1 align="center";>Intelligent Vehicle Damage Assessment & Cost Estimator for Insurance Companies</h1>
+          </fieldset>
+          <p align="right" colour:green>
+          <a href="index" >Home</a>&emsp;
+          <a href="logout">logout</a>&emsp;
+          </p>
+    
+    <br>
+  
+      <form style="text-align: center;" action ="{{url_for('res')}}"method="get" >
+        <input type="file">
+        <button type="submit">Predict</button>
+        <h4> The estimated cost of the Damage is: {{prediction}}</h4>
+    </form>
+      <br><br>
+
+    <div class="footer">
+        <p>Copyright © 2022. All Rights Reserved </p>
+      </div>
+</body>
+</html>
