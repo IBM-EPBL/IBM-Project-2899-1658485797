@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en"  dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction</title>
+
+    <link href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./../static/style/app1.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../static/css/pred.css">
+    
+
+</head>
+
+<body>
+          <a style="margin-bottom:500px;color: aliceblue;" href="index" >Home</a>&emsp;
+          <a style="margin-bottom:500px;color: aliceblue;" href="logout">logout</a>&emsp;
+    <div class="panel pricing-table big-container">
+
+
+
+        <div class="pricing-plan">
+          <div class="" id="header">
+            <h1>Intelligent Vehicle Damage Assessment & Cost Estimator for Insurance Companies</h1>
+          </div>
+
+            <img src="../static/img/t4.jpg"  alt="" class="building-img">
+            
+            <p> Copyright &copy; 2022 IBM-MIT-IT</p>
+
+        </div>
+        <div class="pricing-plan sideBox">
+          <form id="upload-file"  method="post" enctype="multipart/form-data">
+            <br><br>
+            <label for="imageUpload" class="upload-label">
+                Upload
+            </label>
+            <input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg">
+        </form>
+    
+        <div class="image-section" style="display:none;">
+          <div class="img-preview">
+              <div id="imagePreview">
+              </div>
+          </div>
+          <div>
+              <button type="button" class="btn btn-primary btn-lg " id="btn-predict">Predict!</button>
+          </div>
+      </div>
+  
+      <div class="loader" style="display:none;"></div>
+  
+      <h3 id="result">
+          <span> </span>
+      </h3>
+        </div>
+
+    </div>
+
+    
+  <script src="../static/Js/main.js"></script>
+  
+</body>
+
+</html>
