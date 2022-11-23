@@ -10,3 +10,5 @@
 
 ## Kaggle link:
 https://www.kaggle.com/code/balasubramaniankn/damage-area-v2
+
+*Note: Model Building Task is present inside Sprint 1 and Sprint 2 Document
